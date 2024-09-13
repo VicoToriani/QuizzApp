@@ -1,0 +1,7 @@
+C:\Users\Mammad\source\repos\WinFormsApp1\WinFormsApp1\bin\Release\net8.0-windows\publish\QuizzApp.exe
+C:\Users\Mammad\source\repos\WinFormsApp1\WinFormsApp1\bin\Release\net8.0-windows\publish\QuizzApp.dll
+C:\Users\Mammad\source\repos\WinFormsApp1\WinFormsApp1\bin\Release\net8.0-windows\publish\QuizzApp.deps.json
+C:\Users\Mammad\source\repos\WinFormsApp1\WinFormsApp1\bin\Release\net8.0-windows\publish\QuizzApp.runtimeconfig.json
+C:\Users\Mammad\source\repos\WinFormsApp1\WinFormsApp1\bin\Release\net8.0-windows\publish\QuizzApp.dll.config
+C:\Users\Mammad\source\repos\WinFormsApp1\WinFormsApp1\bin\Release\net8.0-windows\publish\QuizzApp.pdb
+C:\Users\Mammad\source\repos\WinFormsApp1\WinFormsApp1\bin\Release\net8.0-windows\publish\INIFileParser.dll
