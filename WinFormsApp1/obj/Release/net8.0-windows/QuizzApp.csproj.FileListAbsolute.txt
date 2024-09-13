@@ -44,3 +44,4 @@ C:\Users\Mammad\source\repos\QuizzApp\WinFormsApp1\obj\Release\net8.0-windows\re
 C:\Users\Mammad\source\repos\QuizzApp\WinFormsApp1\obj\Release\net8.0-windows\QuizzApp.pdb
 C:\Users\Mammad\source\repos\QuizzApp\WinFormsApp1\obj\Release\net8.0-windows\QuizzApp.genruntimeconfig.cache
 C:\Users\Mammad\source\repos\QuizzApp\WinFormsApp1\obj\Release\net8.0-windows\ref\QuizzApp.dll
+C:\Users\Mammad\source\repos\QuizzApp\WinFormsApp1\obj\Release\net8.0-windows\QuizzApp.sourcelink.json
