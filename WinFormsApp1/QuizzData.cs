@@ -82,6 +82,9 @@ namespace QuizzApp
     {
         private IniData ini;
         private int round_count = 0;
+        private bool showLogo = false;
+        private bool showCategorie = false;
+
         // private List<RoundData> rounds = [];
         private Dictionary<int, RoundData> rounds = new Dictionary<int, RoundData>();
 
@@ -93,6 +96,9 @@ namespace QuizzApp
         public void Load()
         {
             round_count = Int32.Parse(ini["configuration"]["round_count"]);
+            showLogo = Boolean.Parse(ini["configuration"]["showLogo"]);
+            showCategorie = Boolean.Parse(ini["configuration"]["showCategorie"]);
+
             for (int i = 1; i <= round_count ; i++)
             {                
                 RoundData round = new RoundData(ini, i);
@@ -107,5 +113,8 @@ namespace QuizzApp
         }
 
         public int getRoundCount() { return round_count; }
+
+        public bool isLogoVisible() { return showLogo; }
+        public bool isCategorieVisible() { return showCategorie; }
     }
 }

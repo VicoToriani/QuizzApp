@@ -35,29 +35,35 @@ namespace QuizzApp
             string strWorkPath = System.IO.Path.GetDirectoryName(strExeFilePath);
             string strIniPath = System.IO.Path.Combine(strWorkPath, "quizzApp.ini");
             IniData data = parser.ReadFile(strIniPath, Encoding.UTF8);
-            
+
             quizzData = new QuizzData(data);
-            quizzData.Load();                   
+            quizzData.Load();
         }
 
         private void OnLoad(object sender, EventArgs e)
         {
-            updateWizzard(1);            
+            updateWizzard(1);
         }
 
-        private void updateWizzard(int roundNr) {           
+        private void updateWizzard(int roundNr)
+        {
             RoundData roundData = quizzData.GetRoundData(roundNr);
-            this.categorie.Text = roundData.getCategory();
+            if (quizzData.isCategorieVisible())
+                this.categorie.Text = roundData.getCategory();
+            else
+                this.categorie.Text = "";
+
             this.categorieQuestion.Text = roundData.getCategoryQuestion();
-            UpdateLogo(roundData);
+            
+            UpdateLogo(roundData, quizzData.isLogoVisible());
             
             question1.InitContent(roundData.GetQuestion(1));
             question2.InitContent(roundData.GetQuestion(2));
             question3.InitContent(roundData.GetQuestion(3));
             question4.InitContent(roundData.GetQuestion(4));
             question5.InitContent(roundData.GetQuestion(5));
-            question6.InitContent(roundData.GetQuestion(6));   
-            
+            question6.InitContent(roundData.GetQuestion(6));
+
             btnForward.Visible = (roundNr < quizzData.getRoundCount());
             btnBack.Visible = (roundNr != 1);
         }
@@ -74,11 +80,14 @@ namespace QuizzApp
             updateWizzard(roundNr);
         }
 
-        private void UpdateLogo(RoundData roundData)
+        private void UpdateLogo(RoundData roundData, bool isVisible)
         {
+            if (!isVisible) { this.logo.Visible = false; return; }
+
             string logoName = roundData.getLogo();
-            if (logoMap.ContainsKey(logoName)) 
+            if (logoMap.ContainsKey(logoName))
                 this.logo.Image = logoMap[logoName];
         }
+
     }
 }

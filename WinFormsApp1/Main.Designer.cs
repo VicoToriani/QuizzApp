@@ -30,7 +30,6 @@ namespace QuizzApp
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Main));
             contextMenuStrip1 = new ContextMenuStrip(components);
             startToolStripMenuItem = new ToolStripMenuItem();
             beendenToolStripMenuItem = new ToolStripMenuItem();
@@ -62,7 +61,6 @@ namespace QuizzApp
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(2459, 1509);
             ContextMenuStrip = contextMenuStrip1;

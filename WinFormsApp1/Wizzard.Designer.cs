@@ -257,13 +257,14 @@
             // 
             // Wizzard
             // 
-            AutoScaleMode = AutoScaleMode.Inherit;
+            AutoScaleMode = AutoScaleMode.None;
             ClientSize = new Size(2273, 1351);
             Controls.Add(tableLayoutPanelMain);
             Name = "Wizzard";
             ShowIcon = false;
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Österreich Quizz";
+            Text = "Quizz";
+            WindowState = FormWindowState.Maximized;
             Load += OnLoad;
             ((System.ComponentModel.ISupportInitialize)logo).EndInit();
             tableLayoutPanelQuestions.ResumeLayout(false);
